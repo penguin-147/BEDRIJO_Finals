@@ -1,0 +1,165 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: #D0E8CC;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; 
+
+    }
+
+    .container {
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .register-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .register-box h2 {
+      text-align: center;
+      font-size: 45px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #1d1d1d;
+      margin-bottom: 10px;
+    }
+
+    .input-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0 10px;
+      background: #fafafa;
+      height: 45px;
+    }
+
+    .input-row img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .placeholder {
+      font-size: 14px;
+    }
+
+    .register {
+      text-align: center;
+      background: #4CAF50;
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: default;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .input-row.space-between {
+      justify-content: space-between;
+    }
+
+    .icon-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .eye-icon {
+      width: 22px;
+      height: 22px;
+      opacity: 0.6;
+    }
+
+    .circle-group {
+      position: absolute;
+      z-index: 0;
+    }
+
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .ellipse {
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.7;
+    }
+
+    /* Bottom-left ellipses */
+    .bottom-left .e23 { width: 60vw; height: 60vw; left: -30vw; bottom: -30vw; background: #B2E7B8; }
+    .bottom-left .e22 { width: 55vw; height: 55vw; left: -27.5vw; bottom: -27.5vw; background: #99E2B4; }
+    .bottom-left .e21 { width: 50vw; height: 50vw; left: -25vw; bottom: -25vw; background: #88D4AB; }
+    .bottom-left .e20 { width: 45vw; height: 45vw; left: -22.5vw; bottom: -22.5vw; background: #78C6A3; }
+    .bottom-left .e19 { width: 40vw; height: 40vw; left: -20vw; bottom: -20vw; background: #67B99A; }
+    .bottom-left .e24 { width: 35vw; height: 35vw; left: -17.5vw; bottom: -17.5vw; background: #56AB91; }
+    .bottom-left .e25 { width: 30vw; height: 30vw; left: -15vw; bottom: -15vw; background: #469D89; }
+    .bottom-left .e26 { width: 25vw; height: 25vw; left: -12.5vw; bottom: -12.5vw; background: #358F80; }
+
+    /* Top-right ellipses */
+    .top-right .e23 { width: 60vw; height: 60vw; right: -30vw; top: -30vw; background: #B2E7B8; }
+    .top-right .e22 { width: 55vw; height: 55vw; right: -27.5vw; top: -27.5vw; background: #99E2B4; }
+    .top-right .e21 { width: 50vw; height: 50vw; right: -25vw; top: -25vw; background: #88D4AB; }
+    .top-right .e20 { width: 45vw; height: 45vw; right: -22.5vw; top: -22.5vw; background: #78C6A3; }
+    .top-right .e19 { width: 40vw; height: 40vw; right: -20vw; top: -20vw; background: #67B99A; }
+    .top-right .e24 { width: 35vw; height: 35vw; right: -17.5vw; top: -17.5vw; background: #56AB91; }
+    .top-right .e25 { width: 30vw; height: 30vw; right: -15vw; top: -15vw; background: #469D89; }
+    .top-right .e26 { width: 25vw; height: 25vw; right: -12.5vw; top: -12.5vw; background: #358F80; }
+
+    
+    @media screen and (max-width: 600px) {
+      .circle-group {
+        transform: scale(0.8);
+        opacity: 0.7;
+      }
+      .bottom-left {
+        bottom: -10vw;
+        left: -10vw;
+      }
+      .top-right {
+        top: -10vw;
+        right: -10vw;
+      }
+      .register-box {
+        padding: 20px;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .circle-group {
+        transform: scale(0.6);
+        opacity: 0.7;
+      }
+      .bottom-left {
+        bottom: -5vw;
+        left: -5vw;
+      }
+      .top-right {
+        top: -5vw;
+        right: -5vw;
+      }
+      .register-box {
+        padding: 15px;
+      }
+    }

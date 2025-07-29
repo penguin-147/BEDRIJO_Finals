@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at bottom left, #A8D5BA, #DCEAD6);
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  padding: 20px;
+  position: relative;  
+  z-index: 1;  
+}
+
+
+.login-box {
+  background: transparent;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+  
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+
+
+.input-group img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.eye-icon {
+  margin-left: auto; 
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #555;
+}
+
+.login-btn {
+  background-color: #132A13;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #999;
+  margin: 0 10px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 25px; 
+  margin-top: 20px;
+  background: none; 
+  border: none;
+  padding: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.social-button img {
+  width: 18px;
+}
+
+.register {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.register a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ambottt */
+.circle-group {
+  position: absolute;
+  z-index: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  margin-top: 1000px;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.ellipse {
+  transform: scale(0.4); 
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Bottom-left ellipses (moved much higher) */
+.e23 { width: 1225px; height: 1225px; left: -612.5px; top: -650px; background: #B2E7B8; }
+.e22 { width: 1125px; height: 1125px; left: -562.5px; top: -600px; background: #99E2B4; }
+.e21 { width: 1025px; height: 1025px; left: -512.5px; top: -550px; background: #88D4AB; }
+.e20 { width: 925px; height: 925px; left: -462.5px; top: -500px; background: #78C6A3; }
+.e19 { width: 825px; height: 825px; left: -412.5px; top: -450px; background: #67B99A; }
+.e24 { width: 725px; height: 725px; left: -362.5px; top: -400px; background: #56AB91; }
+.e25 { width: 625px; height: 625px; left: -312.5px; top: -350px; background: #469D89; }
+.e26 { width: 525px; height: 525px; left: -262.5px; top: -300px; background: #358F80; }
+
+
+/* Top-right ellipses (unchanged but smaller via scale) */
+.top.e23 { width: 1225px; height: 1225px; right: -612.5px; top: -625px; background: #B2E7B8; }
+.top.e22 { width: 1125px; height: 1125px; right: -562.5px; top: -575px; background: #99E2B4; }
+.top.e21 { width: 1025px; height: 1025px; right: -512.5px; top: -525px; background: #88D4AB; }
+.top.e20 { width: 925px; height: 925px; right: -462.5px; top: -475px; background: #78C6A3; }
+.top.e19 { width: 825px; height: 825px; right: -412.5px; top: -425px; background: #67B99A; }
+.top.e24 { width: 725px; height: 725px; right: -362.5px; top: -375px; background: #56AB91; }
+.top.e25 { width: 625px; height: 625px; right: -312.5px; top: -325px; background: #469D89; }
+.top.e26 { width: 525px; height: 525px; right: -262.5px; top: -275px; background: #358F80; }
